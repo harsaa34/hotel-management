@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="contract page" href="contract.php">
+</head>
+<body>
+
+<div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="submit_contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</div>
+<style>
+    .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+</style>
+
+</body>
+</html>
